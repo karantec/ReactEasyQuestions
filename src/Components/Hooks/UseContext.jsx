@@ -3,7 +3,7 @@
 // The useContext hook allows you to access context values in functional components.
 // Example:
 
-jsx
+// jsx
 
 import React, { createContext, useContext, useState } from 'react';
 

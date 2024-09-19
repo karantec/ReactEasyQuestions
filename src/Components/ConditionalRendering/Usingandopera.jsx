@@ -1,9 +1,10 @@
 // 3. Conditional Rendering Using the Logical && Operator
 
-// You can use the && operator for conditions where you only want to render something if the condition is true. If the condition is false, nothing is rendered.
+// You can use the && operator for conditions where you only want to render something if the condition is true.
+//  If the condition is false, nothing is rendered.
 // Example:
 
-jsx
+// jsx
 
 function Notification(props) {
   const hasNewMessages = props.newMessages.length > 0;

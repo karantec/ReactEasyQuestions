@@ -1,6 +1,7 @@
 // 4. Conditional Rendering with null
 
-// Sometimes, you may want to return null to explicitly render nothing. In this case, the component returns null, and React won’t render anything.
+// Sometimes, you may want to return null to explicitly render nothing. In this case, the component returns null, 
+// and React won’t render anything.
 // Example:
 
 // jsx

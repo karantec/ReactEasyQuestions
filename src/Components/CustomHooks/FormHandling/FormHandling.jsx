@@ -28,6 +28,7 @@ function useForm(initialValues) {
 
     if (Object.keys(newErrors).length === 0) {
       // Handle form submission
+      alert('Form submission');
       console.log('Form submitted:', values);
     }
   };
@@ -39,44 +40,7 @@ export default useForm;
 
 // Using the Custom Hook:
 
-jsx
 
-import React from 'react';
-import useForm from './useForm';
-
-function MyForm() {
-  const { values, errors, handleChange, handleSubmit } = useForm({
-    name: '',
-    email: '',
-  });
-
-  return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Name:
-        <input
-          type="text"
-          name="name"
-          value={values.name}
-          onChange={handleChange}
-        />
-        {errors.name && <p>{errors.name}</p>}
-      </label>
-      <label>
-        Email:
-        <input
-          type="email"
-          name="email"
-          value={values.email}
-          onChange={handleChange}
-        />
-      </label>
-      <button type="submit">Submit</button>
-    </form>
-  );
-}
-
-export default MyForm;
 
 // Explanation:
 

@@ -1,10 +1,11 @@
 // 1. Controlled Components
 
-// Controlled components are form elements whose values are controlled by React state. The value of the form element is tied to the component's state, and any changes to the input are handled via event handlers.
+// Controlled components are form elements whose values are controlled by React state. The value of the form element is tied to the component's state, 
+// and any changes to the input are handled via event handlers.
 // Example:
 
 
-import React, { useState } from 'react';
+import  { useState } from 'react';
 
 function ControlledForm() {
   const [inputValue, setInputValue] = useState('');

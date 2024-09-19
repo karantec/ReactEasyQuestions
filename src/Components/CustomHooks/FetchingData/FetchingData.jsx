@@ -1,9 +1,9 @@
-1. Custom Hook for Fetching Data
+// 1. Custom Hook for Fetching Data
 
-A custom hook that fetches data from an API can be reused across different components.
-useFetch.js:
+// A custom hook that fetches data from an API can be reused across different components.
+// useFetch.js:
 
-jsx
+// jsx
 
 import { useState, useEffect } from 'react';
 
@@ -41,26 +41,9 @@ export default useFetch;
 
 // Using the Custom Hook:
 
-jsx
+// jsx
 
-import React from 'react';
-import useFetch from './useFetch';
 
-function DataDisplay() {
-  const { data, loading, error } = useFetch('https://api.example.com/data');
-
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error.message}</p>;
-
-  return (
-    <div>
-      <h1>Data:</h1>
-      <pre>{JSON.stringify(data, null, 2)}</pre>
-    </div>
-  );
-}
-
-export default DataDisplay;
 
 // Explanation:
 

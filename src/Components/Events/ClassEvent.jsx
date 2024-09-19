@@ -2,9 +2,9 @@
 
 // jsx
 
-import React, { Component } from 'react';
+import  { Component } from 'react';
 
-class ClickButton extends Component {
+class ClassClickButton extends Component {
   constructor(props) {
     super(props);
     // Initialize the state
@@ -13,12 +13,17 @@ class ClickButton extends Component {
     };
     // Binding the event handler method
     this.handleClick = this.handleClick.bind(this);
+    this.handleClick2=this.handleClick2.bind(this);
   }
 
   // Event handler method to handle the button click
   handleClick() {
     this.setState({ count: this.state.count + 1 });
   }
+  handleClick2() {
+    this.setState({ count: this.state.count - 1 });
+  }
+
 
   render() { 
     return (
@@ -26,12 +31,13 @@ class ClickButton extends Component {
         <p>You clicked {this.state.count} times.</p>
         {/* Event handler passed to the button */}
         <button onClick={this.handleClick}>Click me</button>
+        <button onClick={this.handleClick2}>Click me</button>
       </div>
     );
   }
 }
 
-export default ClickButton;
+export default ClassClickButton;
 
 // Explanation:
 

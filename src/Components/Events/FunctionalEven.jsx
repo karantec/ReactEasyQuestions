@@ -4,9 +4,9 @@
 
 // jsx
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-function ClickButton() {
+function FunctionalClickButton() {
   // Using useState to manage the click count state
   const [count, setCount] = useState(0);
 
@@ -14,17 +14,21 @@ function ClickButton() {
   const handleClick = () => {
     setCount(count + 1);
   };
+  const handleClick1 = () => {
+    setCount(count - 1);
+  };
 
   return (
     <div>
       <p>You clicked {count} times.</p>
       {/* Event handler passed to the button */}
       <button onClick={handleClick}>Click me</button>
+      <button onClick={handleClick1}>Click me</button>
     </div>
   );
 }
 
-export default ClickButton;
+export default FunctionalClickButton;
 
 // Explanation:
 

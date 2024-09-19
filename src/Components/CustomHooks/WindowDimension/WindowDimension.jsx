@@ -31,25 +31,8 @@ function useWindowDimensions() {
 
 export default useWindowDimensions;
 
-Using the Custom Hook:
 
-jsx
 
-import React from 'react';
-import useWindowDimensions from './useWindowDimensions';
-
-function WindowSize() {
-  const { width, height } = useWindowDimensions();
-
-  return (
-    <div>
-      <p>Width: {width}px</p>
-      <p>Height: {height}px</p>
-    </div>
-  );
-}
-
-export default WindowSize;
 
 // Explanation:
 

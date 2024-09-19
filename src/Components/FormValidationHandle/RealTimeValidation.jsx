@@ -2,7 +2,7 @@
 
 // jsx
 
-import React, { useState } from 'react';
+import  { useState } from 'react';
 
 function RealTimeValidationForm() {
   const [email, setEmail] = useState('');
@@ -33,7 +33,9 @@ function RealTimeValidationForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!emailError && !passwordError) {
+      alert('Form submitted successfully!');
       console.log('Form submitted successfully!');
+      
       // Handle successful form submission
     }
   };

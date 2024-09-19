@@ -33,6 +33,7 @@ function ComplexValidationForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
+      alert('form Submitted successfully');
       console.log('Form submitted successfully!');
       // Handle successful form submission
     }

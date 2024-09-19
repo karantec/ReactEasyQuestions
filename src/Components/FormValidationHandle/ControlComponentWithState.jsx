@@ -29,7 +29,9 @@ function FormWithValidation() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
+      alert('Form successfully submitted');
       console.log('Form submitted successfully!');
+      
       // Handle successful form submission
     }
   };
